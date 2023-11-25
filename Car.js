@@ -1,3 +1,5 @@
+// Name: Rithvik Varma Thotakura
+// ID: C0895311
 class Car {
     constructor(brand, model, year, color, price, gas) {
         this.brand = brand;
