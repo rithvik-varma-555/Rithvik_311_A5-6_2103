@@ -35,3 +35,10 @@ class Car {
         return this.year === new Date().getFullYear();
       }
 }
+
+const honda = new Car("Honda", "CR-V", 2023, "Red", 50000, 45);
+const ford = new Car("Ford", "F-150", 2020, "Black", 25000, 30);
+const bmw = new Car("BMW", "X5", 2022, "Green", 60000, 65);
+const mazda = new Car("Mazda", "CX-5", 2019, "White", 15000, 60);
+const audi = new Car("Audi", "Q7", 2018, "Silver", 52000, 47);
+const kia = new Car("Kia", "Forte", 2020, "Blue", 21000, 56);
