@@ -17,4 +17,21 @@ class Car {
         console.log(`Price: $${this.price}`);
     }
 
+    race(turns) {
+        for (let i = 1; i <= turns; i++) {
+          console.log(`Race Turn ${i}`);
+          this.consumeGas();
+        }
+      }
+    
+      consumeGas() {
+        const gasLoss = this.isNew() ? 5 : 5 + (new Date().getFullYear() - this.year);
+        this.gas -= gasLoss;
+        console.log(`Gas remaining: ${this.gas} litres`);
+        console.log("------------------------");
+      }
+    
+      isNew() {
+        return this.year === new Date().getFullYear();
+      }
 }
